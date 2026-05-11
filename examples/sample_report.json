@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "total": 3,
+    "ok": 3,
+    "errors": 0,
+    "mastered_ok": 0,
+    "lufs_off": 2,
+    "tp_over": 1,
+    "crest_out": 2
+  },
+  "targets": {
+    "lufs_target": -14.0,
+    "lufs_tolerance": 0.5,
+    "true_peak_limit_dbtp": -1.0,
+    "crest_min_db": 14.0,
+    "crest_max_db": 18.0
+  },
+  "results": [
+    {
+      "ok": true,
+      "path": "Bounces/STEP_5_4_smoke_v4_-52.1L_-31.9P_260506-1350.wav",
+      "filename": "STEP_5_4_smoke_v4_-52.1L_-31.9P_260506-1350.wav",
+      "size_bytes": 44511496,
+      "duration_sec": 168.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "lufs": -52.08,
+      "true_peak_dbtp": -31.93,
+      "sample_peak_dbfs": -31.98,
+      "crest_db": 30.1,
+      "lufs_target": -14.0,
+      "tp_limit": -1.0,
+      "lufs_off_target": true,
+      "tp_over_limit": false,
+      "crest_out_of_range": true,
+      "verdict": "LUFS off | crest out of range",
+      "flags": [
+        "LUFS off",
+        "crest out of range"
+      ]
+    },
+    {
+      "ok": true,
+      "path": "Bounces/STEP_5_4_smoke_v5_-52.1L_-31.9P_260506-1354.wav",
+      "filename": "STEP_5_4_smoke_v5_-52.1L_-31.9P_260506-1354.wav",
+      "size_bytes": 44511496,
+      "duration_sec": 168.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "lufs": -52.08,
+      "true_peak_dbtp": -31.93,
+      "sample_peak_dbfs": -31.98,
+      "crest_db": 30.1,
+      "lufs_target": -14.0,
+      "tp_limit": -1.0,
+      "lufs_off_target": true,
+      "tp_over_limit": false,
+      "crest_out_of_range": true,
+      "verdict": "LUFS off | crest out of range",
+      "flags": [
+        "LUFS off",
+        "crest out of range"
+      ]
+    },
+    {
+      "ok": true,
+      "path": "Bounces/STEP_5_4_test_-13.7L_-1.0P_260506-1406.wav",
+      "filename": "STEP_5_4_test_-13.7L_-1.0P_260506-1406.wav",
+      "size_bytes": 59470082,
+      "duration_sec": 336.5,
+      "sample_rate": 44100,
+      "channels": 2,
+      "lufs": -13.7,
+      "true_peak_dbtp": -0.98,
+      "sample_peak_dbfs": -1.01,
+      "crest_db": 15.6,
+      "lufs_target": -14.0,
+      "tp_limit": -1.0,
+      "lufs_off_target": false,
+      "tp_over_limit": true,
+      "crest_out_of_range": false,
+      "verdict": "TP over",
+      "flags": [
+        "TP over"
+      ]
+    }
+  ]
+}
