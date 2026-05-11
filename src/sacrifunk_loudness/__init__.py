@@ -1,6 +1,6 @@
 """sacrifunk-loudness — batch LUFS + true-peak + crest + LRA analyzer with CLI + Markdown + email."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from .analyzer import (
     AnalysisResult,

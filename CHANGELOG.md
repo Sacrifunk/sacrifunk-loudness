@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] — 2026-05-11
+
+### Changed
+- `requires-python` lowered from `>=3.10` to `>=3.9`. The codebase has always used `from __future__ import annotations`, so the few `X | None`-style type hints are stringified at parse time and never evaluated at runtime. No 3.10+ runtime features are used. Verified empirically against Apple's system Python 3.9.6 (`/usr/bin/python3`) on 2026-05-11 — `analyze_file` returned bit-for-bit identical output to the Python 3.14 reference run on a 60 MB master.
+- Added `Programming Language :: Python :: 3.9` classifier.
+
+### Why this matters
+The original v0.1.0 pin to `>=3.10` was conservative-by-default rather than necessary. It forced production callers running under Apple's system Python (the n8n `_logic_pro_bounce_watch` cron uses `/usr/bin/python3`) to install via `pip install --ignore-requires-python` — a flag that masks legitimate future incompatibilities. v0.1.1 removes the need for the flag.
+
+Surfaced by the Learning Lab Task 2.5 swap and tracked as [issue #1](https://github.com/Sacrifunk/sacrifunk-loudness/issues/1).
+
 ## [0.1.0] — 2026-05-11
 
 ### Added
